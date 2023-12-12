@@ -1,0 +1,12 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:E:/config-server/config-server/config-files
+  profiles:
+    active: native
